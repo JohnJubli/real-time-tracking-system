@@ -1,0 +1,180 @@
+real-time-tracking-system
+│
+├── backend
+│   ├── src/main/java/com/tracking
+│   │   ├── config
+│   │   ├── controller
+│   │   ├── dto
+│   │   ├── entity
+│   │   ├── exception
+│   │   ├── mapper
+│   │   ├── repository
+│   │   ├── security
+│   │   ├── service
+│   │   └── TrackingApplication.java
+│   │
+│   └── src/main/resources
+│       ├── application.properties
+│       └── static
+│
+├── frontend
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── services
+│   │   ├── map
+│   │   ├── utils
+│   │   ├── App.js
+│   │   └── index.js
+│   │
+│   └── public
+│       └── index.html
+│
+├── database
+│   └── schema.sql
+│
+├── documentation
+│   ├── architecture.md
+│   ├── api-docs.md
+│   ├── security.md
+│   ├── setup-guide.md
+│   └── testing.md
+│
+├── screenshots
+│   ├── login.png
+│   ├── live-tracking.png
+│   └── history.png
+│
+└── README.md
+
+
+DAY-1
+Bacckend Folder,Go to Spring Initializr (Again)
+
+👉 https://start.spring.io
+
+Fill exactly like this:
+
+Project: Maven
+
+Language: Java
+
+Spring Boot: 3.x
+
+Java: 17
+
+Group: com.tracking
+
+Artifact: backend
+
+Packaging: Jar
+
+Dependencies:
+
+✅ Spring Web
+✅ Spring Data JPA
+✅ Spring Security
+✅ WebSocket
+✅ MySQL Driver
+
+real-time-tracking-system
+ ├── backend   ✅ (with mvnw)
+ ├── frontend
+ ├── database
+ └── documentation
+
+mvnw.cmd   ✅
+mvnw       (for Linux/Mac)
+pom.xml
+src
+
+command prompt 
+
+cd D:\real-time-tracking-system\backend
+mvnw.cmd spring-boot:run
+
+Downloading Maven...
+Tomcat started on port 8080
+Started BackendApplication
+
+Frontend react setup
+STEP 1: Make sure Node & npm work
+
+Run this: node -v
+           npm -v
+STEP 2: Clear npx cache (important)
+npm cache clean --force
+STEP 3: Use the MODERN & RECOMMENDED command
+
+Instead of old create-react-app, use this 👇
+
+cd D:\real-time-tracking-system\frontend
+npx create-react-app@latest tracking-frontend
+STEP 5: Enter React project
+cd tracking-frontend
+npm start
+
+You can now view tracking-frontend in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.0.171:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+strcture 
+src
+ ├── pages
+ ├── services
+ ├── map
+ ├── components
+ ├── utils
+ ├── App.js
+ └── index.js
+ 
+ ///Data Setup
+ 
+Login to MySQL
+
+In Command Prompt: mysql -u root -p
+ 
+Create the Database//At the mysql> prompt, type: CREATE DATABASE tracking_db;
+
+Verify Database Exists (Important)//Run: SHOW DATABASES;
+
+exit;
+go to project root
+cd D:\real-time-tracking-system
+cd database
+notepad schema.sql
+
+ Paste This SQL (Exactly)
+-- Users table
+CREATE TABLE users (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  username VARCHAR(50),
+  password VARCHAR(255),
+  role VARCHAR(20)
+);
+
+-- Location table
+CREATE TABLE locations (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  user_id BIGINT,
+  latitude DOUBLE,
+  longitude DOUBLE,
+  timestamp DATETIME
+);
+
+Save and close Notepad.
+
+Final Folder Structure 
+real-time-tracking-system
+├── backend
+├── frontend
+├── database
+│   └── schema.sql
+
+
+
