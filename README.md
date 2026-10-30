@@ -947,38 +947,3 @@ WebSocket authorization per destination
 Centralized logging
 
 Monitoring and alerting
-
-
-
-📦 Project Status
-
-Backend                  ✅
-Spring Security          ✅
-JWT Authentication      ✅
-Role Authorization       ✅
-REST APIs                ✅
-MySQL Persistence        ✅
-STOMP WebSocket          ✅
-JWT WebSocket Auth       ✅
-Browser GPS              ✅
-React Tracker            ✅
-React Admin              ✅
-Leaflet Map              ✅
-Real-Time Broadcast      ✅
-Location History         ✅
-
-👨‍💻 Author
-
-John Jubli Simhadri
-
-Hyderabad, Telangana, India
-
-Java Developer | Backend Developer | Full-Stack Java Developer
-
-📄 License
-
-This project is intended for learning, portfolio demonstration, and
-interview preparation.
-
-Add a formal open-source license if you decide to distribute the project
-publicly.
