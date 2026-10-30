@@ -149,26 +149,55 @@ React State + Leaflet Map
 
 📸 Application Screenshots
 
+Explore the application's user interface and key features through the screenshots below.
+
 🔐 Authentication
 
-<p align="center">
-  <img src="screenshots/login.png" width="48%" alt="Login Page"/>
-  <img src="screenshots/register.png" width="48%" alt="Registration Page"/>
-</p>👨‍💻 Admin & Tracker Dashboards
+Secure login interfaces for Admin and Tracker users.
+
+<table>
+  <tr>
+    <td align="center"><b>Tracker Login</b></td>
+    <td align="center"><b>Admin Login</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/e11df995-1b7f-4d11-8e60-3fae100155cf" width="100%" alt="Tracker Login"/></td>
+    <td><img src="https://github.com/user-attachments/assets/4b431b68-f4bb-4aee-bf6b-f73d32545ae6" width="100%" alt="Admin Login"/></td>
+  </tr>
+</table>
+
+👨‍💻 Dashboards
+
+Dedicated dashboards for managing users and monitoring tracking activities.
+
+<table>
+  <tr>
+    <td align="center"><b>Admin Dashboard</b></td>
+    <td align="center"><b>Tracker Dashboard</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/4d1ece32-defd-42eb-933a-9767d5befbd7" width="100%" alt="Admin Dashboard"/></td>
+    <td><img src="https://github.com/user-attachments/assets/87b2a447-c552-4a59-8958-95c4aa5bc519" width="100%" alt="Tracker Dashboard"/></td>
+  </tr>
+</table>
+
+📍 Live GPS Tracking
+
+Real-time GPS location monitoring with an interactive map interface.
 
 <p align="center">
-  <img src="screenshots/admin-dashboard.png" width="48%" alt="Admin Dashboard"/>
-  <img src="screenshots/tracker-dashboard.png" width="48%" alt="Tracker Dashboard"/>
-</p>📍 Live GPS Tracking
+  <img src="https://github.com/user-attachments/assets/50ab9976-f9b4-4082-a925-d9eed55e10e4" width="95%" alt="Live GPS Tracking"/>
+</p>
+
+📊 Location History
+
+View and monitor previously recorded GPS locations and tracking activity.
 
 <p align="center">
-  <img src="screenshots/live-map.png" width="85%" alt="Live GPS Tracking Map"/>
-</p>📊 Location History
+  <img src="https://github.com/user-attachments/assets/ba83df61-c1ac-436c-8c34-646ae10512d9" width="95%" alt="Location History"/>
+</p>
 
-<p align="center">
-  <img src="screenshots/location-history.png" width="85%" alt="Location History"/>
-</p>🔗 REST API Endpoints
-
+🔗 REST API Endpoints
 Method| Endpoint| Description
 POST| "/api/auth/register"| Register a new user
 POST| "/api/auth/login"| Authenticate user
@@ -256,3 +285,8 @@ Register a user, log in, start GPS tracking, and use the administrator account t
 - Distance and route calculation
 - Tracking notifications
 - Mobile application integration
+
+🤝 Contribution
+Contributions are welcome! Feel free to fork this repository and submit pull requests.
+
+💼 LinkedIn: [John Jubli Simhadri](https://www.linkedin.com/in/john-jubli-simhadri-bb36a02a0/)
